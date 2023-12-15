@@ -1,0 +1,107 @@
+:root {
+  --bck-clr: linear-gradient(45deg, blue, white, green);
+  --best-color: rgb(119, 0, 255);
+  --benefit-color: blue;
+  --deal-color: red;
+  --promo-text: white;
+  --info-text-color: skyblue;
+  --price-container-color: linear-gradient(20deg, darkgreen, lightgreen);
+  --button-color: linear-gradient(pink, orange);
+  --old-price-color: grey;
+}
+.card {
+  border: 1px solid black;
+  background-image: var(--bck-clr);
+  font-family: Lora, Arial;
+  padding: 15px;
+  width: 500px;
+  position: relative;
+}
+.image-container {
+  text-align: center;
+}
+img {
+  width: 360px;
+  border-radius: 50%;
+}
+.best {
+  background-color: var(--best-color);
+  color: var(--promo-text);
+  font-weight: bold;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  top: 14px;
+  left: 0;
+}
+.benefit {
+  background-color: var(--benefit-color);
+  color: var(--promo-text);
+  font-weight: bold;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 0 10px 10px 0;
+  position: absolute;
+  top: 64px;
+  left: 0;
+}
+.promotion {
+  background-color: var(--deal-color);
+  color: var(--promo-text);
+  font-weight: bold;
+  text-align: center;
+  line-height: 36px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  right: 14px;
+}
+h1 {
+  text-decoration: underline;
+  margin: 15px;
+}
+.description {
+  background-color: var(--info-text-color);
+  padding: 18px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.modifier {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.price-box-container {
+  background-image: var(--price-container-color);
+  padding: 14px;
+  border-radius: 10px;
+  position: relative;
+}
+.price-box {
+  display: inline-block;
+}
+.new-price {
+  font-weight: bold;
+  font-size: 2.5rem;
+  display: block;
+}
+.price {
+  display: block;
+  text-decoration: line-through;
+  font-size: 1.6rem;
+  color: var(--old-price-color);
+}
+.cart-button {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 8px 12px;
+  background-image: var(--button-color);
+  border: 3px solid grey;
+  border-radius: 4px;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
